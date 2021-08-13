@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height: 300px;
+}
+
+.div_stats {
+	background-color: grey;
+
+	width: 20%;
+}
+.img {
+	width: 50%;
+}
+.img_pickaxe {
+	width:50px;
+	height: 60px;
+}
+.img_minor {
+	width:90px;
+	height: 80px;
+}
+.img_mine {
+	width:90px;
+	height: 80px;
+}
+.shop {
+	background-color: green;
+	
+	width: 100px;
+	height: 60px;
+}
+.div_stats_bois {
+	background-color: grey;
+
+	width: 20%;
+}

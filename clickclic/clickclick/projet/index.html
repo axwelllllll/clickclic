@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+
+<link href="ressources/css/style.css"
+		rel="stylesheet">
+
+<html>
+	<head>
+		<title>ClickClick</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="ressources/script/script.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1>ClickClick</h1>
+		</center>
+		
+		<div class="div_stats, box">
+			<center>
+				<p id="total_golds">Golds : 0 </p>
+			
+				<p id="nbr_gps">0 golds/s</p>
+			
+			<img src="ressources/image/minerais_or.png" class="img" onclick="addGold(Val_click)">
+		</center>
+		</div>
+
+		<div class="div_stats_bois, box">
+			<center>
+				<p id="total_wood">Wood: 0 </p>
+			
+				<p id="nbr_wps">0 wood/s</p>
+
+				<img src="ressources/image/wood.png" class="img" onclick="addWood(Val_click)">
+			</center>
+		</div>
+		<br><br><br>
+
+		<div>
+			<button><a href="#" onclick="save()">Sauvegarder</a></button>
+			<button><a href="#" onclick="load()">Reprendre</a></button>
+			<button><a href="#" onclick="stats()">Stats</a></button>
+			<button><a href="#" onclick="info()">Info</a></button>
+
+		</div>
+		<div>
+			<center>
+			<h3 id="nbr_minions">Vous avez 0 améliorations</h3>
+			</center>
+		</div>
+			<div class="box">
+			<h3>Pioche en bois</h3>
+			<h4 id="nbr_wooden_pickaxe">Vous avez 0 pioche en bois</h4>
+			<p id="foreach_wooden_pickaxe">Vous gagnez 0.1gps pour une (0 total gps)</p>
+			<p id="price_wooden_pickaxe">Une pioche en bois vous coute: 10 golds</p>
+			<button><img class="img_pickaxe" src="ressources/image/wooden_pickaxe.png" onclick="buyminions(0)"></button>
+			
+			<h3>Pioche en pierre</h3>
+			<h4 id="nbr_stone_pickaxe">Vous avez 0 pioche en pierre</h4>
+			<p id="foreach_stone_pickaxe">Vous gagnez 1gps pour une (0 total gps)</p>
+			<p id="price_stone_pickaxe">Une pioche en pierre vous coute: 100 golds</p>
+			<button><img class="img_pickaxe" src="ressources/image/stone_pickaxe.png" onclick="buyminions(1)"></button>
+
+			<h3>Pioche en fer </h3>
+			<h4 id="nbr_iron_pickaxe">Vous avez 0 pioche en fer</h4>
+			<p id="foreach_iron_pickaxe">Vous gagnez 5gps pour une (0 total gps)</p>
+			<p id="price_iron_pickaxe">Une pioche en fer vous coute: 500 golds</p>
+			<button><img class="img_pickaxe" src="ressources/image/iron_pickaxe.png" onclick="buyminions(2)"></button>
+		</div>
+
+		<div class="box">
+			<h3>Hache en bois</h3>
+			<h4 id="nbr_wooden_axe">Vous avez 0 hache en bois</h4>
+			<p id="foreach_wooden_axe">Vous gagnez 1wps pour une (0 total gps)</p>
+			<p id="price_wooden_axe">Une hache en bois vous coute:  200 bois</p>
+			<button><img class="img_pickaxe" src="ressources/image/wooden_axe.png" onclick="buyminions_axe(0)"></button>
+			
+			<h3>Hache en pierre</h3>
+			<h4 id="nbr_stone_axe">Vous avez 0 hache en pierre</h4>
+			<p id="foreach_stone_axe">Vous gagnez 5wps pour une (0 total gps)</p>
+			<p id="price_stone_axe">Une hache en pierre vous coute: 500 bois></p>
+			<button><img class="img_pickaxe" src="ressources/image/stone_axe.png" onclick="buyminions_axe(1)"></button>
+			
+			<h3>Hache en fer</h3>
+			<h4 id="nbr_iron_axe">Vous avez 0 hache en fer</h4>
+			<p id="foreach_iron_axe">Vous gagnez 1pps pour une (0 total pps)</p>
+			<p id="price_iron_axe">Une hache en fer vous coute: 1000 bois</p>
+			<button><img class="img_pickaxe" src="ressources/image/iron_axe.png" onclick="buyminions_axe(2)"></button>
+		</div>
+		
+		
+	</body>
+</html>
